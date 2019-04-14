@@ -65,6 +65,37 @@ const styles = theme => ({
   IconButton: {
     height: 59,
     color: "#8b8b8b"
+  },
+  inputsearch: {
+    marginLeft: "80%",
+    width: "25%",
+    marginBottom: "3%",
+    border: "1px solid #d1d1d1",
+    borderRadius: 10,
+    height: 59,
+    backgroundColor: "rgba(237,237,237,0.57)",
+    '@media screen and (max-width:1700px) ': {
+      width: "30%",
+      marginLeft: "75%"
+    },
+    '@media screen and (max-width:1390px) ': {
+      width: "40%",
+      marginLeft: "55%"
+    },
+    '@media screen and (max-width:1000px) ': {
+      width: "45%",
+      marginLeft: "45%"
+    },
+    '@media screen and (max-width:800px) ': {
+      width: "65%",
+      marginLeft: "45%"
+    },
+
+  },
+  inputbase: {
+    '@media screen and (max-width:1700px)': {
+      width: "80%"
+    }
   }
 });
 
@@ -103,15 +134,7 @@ class Home extends React.Component {
           <React.Fragment>
             <div className="tab-content">
               <div
-                style={{
-                  marginLeft: "80%",
-                  width: "25%",
-                  marginBottom: "3%",
-                  border: "1px solid #d1d1d1",
-                  borderRadius: 10,
-                  height: 59,
-                  backgroundColor: "rgba(237,237,237,0.57)"
-                }}
+                className={classes.inputsearch}
               >
                 <IconButton className={classes.IconButton} aria-label="Search">
                   <SearchIcon />
@@ -119,6 +142,7 @@ class Home extends React.Component {
                 <InputBase
                   placeholder="Search"
                   style={{ height: 59, fontSize: 20, color: "#8b8b8b" }}
+                  className={classes.inputbase}
                 />
               </div>
 
@@ -140,15 +164,7 @@ class Home extends React.Component {
           <React.Fragment>
             <div className="tab-content">
               <div
-                style={{
-                  marginLeft: "80%",
-                  width: "25%",
-                  marginBottom: "3%",
-                  border: "1px solid #d1d1d1",
-                  borderRadius: 10,
-                  height: 59,
-                  backgroundColor: "rgba(237,237,237,0.57)"
-                }}
+                className={classes.inputsearch}
               >
                 <IconButton className={classes.IconButton} aria-label="Search">
                   <SearchIcon />
