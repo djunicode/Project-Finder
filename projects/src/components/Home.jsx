@@ -50,6 +50,9 @@ const styles = theme => ({
     },
     "&:focus": {
       color: "#12b6a6"
+    },
+    '@media screen and (max-width:780px)': {
+      fontSize: 20
     }
   },
   tabSelected: {},
@@ -172,6 +175,7 @@ class Home extends React.Component {
                 <InputBase
                   placeholder="Search"
                   style={{ height: 59, fontSize: 20, color: "#8b8b8b" }}
+                  className={classes.inputbase}
                 />
               </div>
               <Grid container spacing={24}>
